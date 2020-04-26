@@ -1,0 +1,83 @@
+{% extends "layouts/simple-page.njk" %}
+
+{% block postContent %}
+
+{# template 1 #}
+<div class="service-area spt">
+    <div class="container bg1" data-padding="40px">
+        <div class="row">
+        {% for service in collections.services %}
+            <div class="col-lg-4 col-md-6 single-service-3">
+                <div class="inner">
+                    <div class="title">
+                        <div class="icon">
+                            <i class="fa fa-{{ service.data.faIcon }}"></i>
+                        </div>
+                        <h4>{{ service.data.title }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ service.data.description }} </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>    
+
+{# template 2 #}
+
+<div class="service-area sp">
+    <div class="container">
+        <div class="section-title" data-margin="0 0 40px">
+            <h2>Our Service</h2>
+            <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+        </div>
+        <div class="row">
+            {% for service in collections.services %}
+            <div class="col-lg-4 col-md-6 single-service-2">
+                <div class="inner">
+                    <div class="title">
+                        <div class="icon">
+                            <i class="fa fa-{{ service.data.faIcon }}"></i>
+                        </div>
+                        <h4>{{ service.data.title }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ service.data.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>   
+
+{# template 3 #}
+
+<div class="service-area bg2 sp">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Service</h2>
+            <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+        </div>
+        <div class="row">
+            {% for service in collections.services %}
+                <div class="col-lg-4 col-md-6 single-service">
+                <div class="inner">
+                    <div class="title">
+                        <div class="icon">
+                            <i class="fa fa-{{ service.data.faIcon }}"></i>
+                        </div>
+                        <h4>{{ service.data.title }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ service.data.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>    
+{% endblock %}

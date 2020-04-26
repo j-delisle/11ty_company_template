@@ -1,0 +1,14 @@
+{
+    "phone": "(774) 988 - 4500",
+    "email": "emp_name@company.com",
+    "address": "30 Heathcote Vista, Cassinfort, LA",
+    "socials": [{
+            "name": "facebook",
+            "url": "#"
+        },
+        {
+            "name": "twitter",
+            "url": "#"
+        }
+    ]
+}
